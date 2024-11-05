@@ -114,7 +114,7 @@ sqlmap -u "http://localhost:8888/register.php" \
 
 **Résultat :**
 
-La liste des utilisateurs de MariaDB a été extraite et sauvegardée dans `mariadb_users.csv`.
+La liste des utilisateurs de MariaDB a été extraite et sauvegardée dans `users.csv`.
 
 ---
 
@@ -159,6 +159,8 @@ sqlmap -u "http://localhost:8888/register.php" \
 ```
 admin
 ```
+
+le mot de passe est encoder en **MD5** (21232f297a57a5a743894a0e4a801fc3), il nous suffit de prendre le hash et de le mettre sur crackstations.
 
 *Encore une fois, un mot de passe faible qui peut être facilement compromis.*
 
