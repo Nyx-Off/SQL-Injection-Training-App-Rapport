@@ -1,7 +1,10 @@
 # 🛡️ SQL Injection Training App - Rapport d'Exploitation 🛡️
 
+<div align="center">
+
 ![SQL Injection](https://evalian.co.uk/wp-content/uploads/2022/04/XSS-Attacks.png)
 
+</div>
 ---
 
 ## 📋 Objectif
