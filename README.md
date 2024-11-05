@@ -1,4 +1,4 @@
-# 🛡️ SQL Injection Training App - Rapport d'Exploitation 🛡️
+# 🛡️ SQL Injection Training App - Rapport 🛡️
 
 <div align="center">
 
