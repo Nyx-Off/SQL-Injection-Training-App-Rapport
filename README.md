@@ -28,12 +28,12 @@ Ce projet a pour but de démontrer l'exploitation de vulnérabilités d'injectio
 
 ### 1. 🔍 Identification des Vulnérabilités d'Injection SQL
 
-En testant le champ `uid` du formulaire `register.php` avec une apostrophe (`'`), une erreur SQL a été générée, révélant l'utilisation de MariaDB. Cela a indiqué une potentielle vulnérabilité d'injection SQL.
+En testant les champs du formulaire `register.php` avec une apostrophe (`'`), une erreur SQL a été générée, révélant l'utilisation de MariaDB. Cela a indiqué une potentielle vulnérabilité d'injection SQL.
 
-**Exemple d'erreur :**
+**erreur :**
 
 ```
-You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version...
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'd41d8cd98f00b204e9800998ecf8427e','','')' at line 1
 ```
 
 ---
