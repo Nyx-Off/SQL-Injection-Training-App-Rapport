@@ -1,6 +1,6 @@
 # 🛡️ SQL Injection Training App - Rapport d'Exploitation 🛡️
 
-![SQL Injection](https://user-images.githubusercontent.com/yourusername/sql-injection-banner.png)
+![SQL Injection](https://evalian.co.uk/wp-content/uploads/2022/04/XSS-Attacks.png)
 
 ---
 
