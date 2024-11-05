@@ -13,9 +13,9 @@
 
 Ce projet a pour but de démontrer l'exploitation de vulnérabilités d'injection SQL dans une application web. Les objectifs spécifiques sont :
 
-1. **Extraire le schéma de la base de données** et le sauvegarder dans un fichier `.csv`.
-2. **Lister les utilisateurs de l'application** et les sauvegarder dans un fichier `.csv`.
-3. **Lister les utilisateurs de MariaDB** et les sauvegarder dans un fichier `.csv`.
+1. [**Extraire le schéma de la base de données**](information_schema) et le sauvegarder dans un fichier `.csv`.
+2. [**Lister les utilisateurs de l'application**](sqlitraining/users.csv) et les sauvegarder dans un fichier `.csv`.
+3. [**Lister les utilisateurs de MariaDB**](mysql/user.csv) et les sauvegarder dans un fichier `.csv`.
 4. **Obtenir et documenter le mot de passe de l'utilisateur root de MariaDB** par force brute.
    
 ---
@@ -73,7 +73,7 @@ sqlmap -u "http://localhost:8888/register.php" \
 **Tables trouvées :**
 
 - [`products`](sqlitraining/products.csv)
-- `users`
+- [`users`](sqlitraining/users.csv)
 
 **Dump du schéma dans un fichier `.csv` :**
 
@@ -97,9 +97,6 @@ sqlmap -u "http://localhost:8888/register.php" \
        -D sqlitraining -T users --dump --dump-format=CSV --batch
 ```
 
-**Résultat :**
-
-Les informations des utilisateurs ont été sauvegardées dans `application_users.csv`.
 
 ---
 
