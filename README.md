@@ -72,7 +72,7 @@ sqlmap -u "http://localhost:8888/register.php" \
 
 **Tables trouvées :**
 
-- `products`
+- [`products`](sqlitraining/products.csv)
 - `users`
 
 **Dump du schéma dans un fichier `.csv` :**
