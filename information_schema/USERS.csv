@@ -1,0 +1,8 @@
+USER,PASSWORD_ERRORS,PASSWORD_EXPIRATION_TIME
+'healthcheck'@'127.0.0.1',0,NULL
+'healthcheck'@'::1',0,NULL
+'healthcheck'@'localhost',0,NULL
+'mariadb.sys'@'localhost',0,0000-00-00 00:00:00
+'root'@'%',0,NULL
+'root'@'localhost',NULL,NULL
+

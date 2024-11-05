@@ -1,0 +1,84 @@
+GRANTEE,IS_GRANTABLE,TABLE_CATALOG,PRIVILEGE_TYPE
+'healthcheck'@'127.0.0.1',NO,def,USAGE
+'healthcheck'@'::1',NO,def,USAGE
+'healthcheck'@'localhost',NO,def,USAGE
+'mariadb.sys'@'localhost',NO,def,USAGE
+'root'@'%',YES,def,LOCK TABLES
+'root'@'%',YES,def,FILE
+'root'@'%',YES,def,REFERENCES
+'root'@'%',YES,def,DELETE
+'root'@'%',YES,def,BINLOG ADMIN
+'root'@'%',YES,def,DELETE HISTORY
+'root'@'%',YES,def,SHOW VIEW
+'root'@'%',YES,def,SUPER
+'root'@'%',YES,def,SHUTDOWN
+'root'@'%',YES,def,SHOW CREATE ROUTINE
+'root'@'%',YES,def,RELOAD
+'root'@'%',YES,def,EVENT
+'root'@'%',YES,def,REPLICATION SLAVE
+'root'@'%',YES,def,INDEX
+'root'@'%',YES,def,BINLOG REPLAY
+'root'@'%',YES,def,CREATE
+'root'@'%',YES,def,SET USER
+'root'@'%',YES,def,CREATE ROUTINE
+'root'@'%',YES,def,CREATE TEMPORARY TABLES
+'root'@'%',YES,def,PROCESS
+'root'@'%',YES,def,REPLICATION SLAVE ADMIN
+'root'@'%',YES,def,INSERT
+'root'@'%',YES,def,TRIGGER
+'root'@'%',YES,def,BINLOG MONITOR
+'root'@'%',YES,def,ALTER
+'root'@'%',YES,def,SLAVE MONITOR
+'root'@'%',YES,def,DROP
+'root'@'%',YES,def,CREATE USER
+'root'@'%',YES,def,EXECUTE
+'root'@'%',YES,def,LOCK TABLES
+'root'@'%',YES,def,FILE
+'root'@'%',YES,def,REPLICATION MASTER ADMIN
+'root'@'%',YES,def,UPDATE
+'root'@'%',YES,def,CREATE TABLESPACE
+'root'@'%',YES,def,CREATE VIEW
+'root'@'%',YES,def,REPLICATION SLAVE 
+'root'@'%',YES,def,SHOW CREATE ROUTINE
+'root'@'%',YES,def,RELOAD
+'root'@'%',YES,def,CONNECTION ADMIN
+'root'@'localhost',YES,def,BINLOG MONITOR
+'root'@'localhost',YES,def,ALTER
+'root'@'localhost',YES,def,DROP
+'root'@'localhost',YES,def,SLAVE MONITOR
+'root'@'localhost',YES,def,FEDERATED ADMIN
+'root'@'localhost',YES,def,ALTER ROUTINE
+'root'@'localhost',YES,def,LOCK TABLES
+'root'@'localhost',YES,def,FILE
+'root'@'localhost',YES,def,UPDATE
+'root'@'localhost',YES,def,REPLICATION MASTER ADMIN
+'root'@'localhost',YES,def,CREATE TABLESPACE
+'root'@'localhost',YES,def,CREATE VIEW
+'root'@'localhost',YES,def,SHOW DATABASES
+'root'@'localhost',YES,def,RELOAD
+'root'@'localhost',YES,def,SHOW CREATE ROUTINE
+'root'@'localhost',YES,def,CONNECTION ADMIN
+'root'@'localhost',YES,def,CREATE USER
+'root'@'localhost',YES,def,EXECUTE
+'root'@'localhost',YES,def,REFERENCES
+'root'@'localhost',YES,def,DELETE
+'root'@'localhost',YES,def,BINLOG ADMIN
+'root'@'localhost',YES,def,DELETE HISTORY
+'root'@'localhost',YES,def,SHOW VIEW
+'root'@'localhost',YES,def,SUPER
+'root'@'localhost',YES,def,SHUTDOWN
+'root'@'localhost',YES,def,SELECT
+'root'@'localhost',YES,def,READ_ONLY ADMIN
+'root'@'localhost',YES,def,EVENT
+'root'@'localhost',YES,def,REPLICATION SLAVE
+'root'@'localhost',YES,def,INDEX
+'root'@'localhost',YES,def,CREATE
+'root'@'localhost',YES,def,BINLOG REPLAY
+'root'@'localhost',YES,def,SET USER
+'root'@'localhost',YES,def,CREATE ROUTINE
+'root'@'localhost',YES,def,CREATE TEMPORARY TABLES
+'root'@'localhost',YES,def,PROCESS
+'root'@'localhost',YES,def,INSERT
+'root'@'localhost',YES,def,REPLICATION SLAVE ADMIN
+'root'@'localhost',YES,def,TRIGGER
+

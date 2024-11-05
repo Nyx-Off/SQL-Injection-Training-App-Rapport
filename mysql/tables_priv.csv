@@ -1,0 +1,3 @@
+Db,Host,User,Grantor,Table_priv,Column_priv,Timestamp,Table_name
+mysql,localhost,mariadb.sys,root@localhost,"Select,Delete",<blank>,0000-00-00 00:00:00,global_priv
+

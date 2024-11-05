@@ -1,0 +1,7 @@
+SQL_PATH,SCHEMA_NAME,SCHEMA_COMMENT,CATALOG_NAME,DEFAULT_COLLATION_NAME,DEFAULT_CHARACTER_SET_NAME
+NULL,sqlitraining,<blank>,def,utf8mb4_uca1400_ai_ci,utf8mb3
+NULL,sys,<blank>,def,utf8mb3_general_ci,utf8mb4
+NULL,performance_schema,<blank>,def,utf8mb3_general_ci,utf8mb4
+NULL,mysql,<blank>,def,utf8mb4_uca1400_ai_ci,utf8mb3
+NULL,information_schema,<blank>,def,utf8mb3_general_ci,utf8mb3
+

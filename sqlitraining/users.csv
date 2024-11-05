@@ -1,0 +1,177 @@
+id,fname,password,username,description
+1,admin,21232f297a57a5a743894a0e4a801fc3 (admin),admin,All hail the admin!!
+2,bobby,5f4dcc3b5aa765d61d8327deb882cf99 (password),bob,Sup! I love swimming!
+3,ramesh,9aeaed51f2b0f6680c4ed4b07fb1a83c (troll),ramesh,I love 5 star!
+4,suresh,9aeaed51f2b0f6680c4ed4b07fb1a83c (troll),suresh,I love 5 star toooo!
+5,alice,c93239cae450631e9f55d71aed99e918 (alice1),alice,In wonderland right now :O
+6,voldemort,856936b417f82c06139c74fa73b1abbe (horcrux),voldemort,How dare you! Avada kedavra!
+7,frodo,f0f8820ee817181d9c6852a097d70d8d (frodo),frodo,Need to go to Mordor. Like right now!
+8,hodor,a55287e9d0b40429e5a944d10132c93e (hodor),hodor,Hodor
+65,rambo,e52848c0eb863d96bc124737116f23a4 (rhombus),rhombus,Im the rambo!! Bwahahaha!
+66,test,098f6bcd4621d373cade4e832627b4f6 (test),test,test
+67,test,098f6bcd4621d373cade4e832627b4f6 (test),test,test
+68,test,098f6bcd4621d373cade4e832627b4f6 (test),test,test
+69,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AND 6147=6407 AND (""Oolc""=""Oolc",test
+70,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AND 3711=3711 AND (""Yqym""=""Yqym",test
+71,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" AND 2524=3664 AND ""Mxyb""=""Mxyb",test
+72,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" AND 3711=3711 AND ""LIET""=""LIET",test
+73,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AND 3739=4305 AND (1670=1670,test
+74,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AND 3711=3711 AND (5246=5246,test
+75,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AND 7291=3726 AND ((7018=7018,test
+76,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AND 3711=3711 AND ((1756=1756,test
+77,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 1720=5834,test
+78,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 3711=3711,test
+79,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 2438=2434-- JfuO,test
+80,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 3711=3711-- TaRe,test
+81,test,098f6bcd4621d373cade4e832627b4f6 (test),-4241,test
+82,test,098f6bcd4621d373cade4e832627b4f6 (test),1,test
+83,test,098f6bcd4621d373cade4e832627b4f6 (test),1,test
+84,test,098f6bcd4621d373cade4e832627b4f6 (test),1,test
+85,test,098f6bcd4621d373cade4e832627b4f6 (test),1,test
+86,test,098f6bcd4621d373cade4e832627b4f6 (test),"-2286"") OR 4441=6796 AND (""PpzU""=""PpzU",test
+87,test,098f6bcd4621d373cade4e832627b4f6 (test),"-7998"") OR 8911=8911 AND (""nQvm""=""nQvm",test
+88,test,098f6bcd4621d373cade4e832627b4f6 (test),"-6009"" OR 5023=8761 AND ""ySjX""=""ySjX",test
+89,test,098f6bcd4621d373cade4e832627b4f6 (test),"-9322"" OR 8911=8911 AND ""DwOP""=""DwOP",test
+90,test,098f6bcd4621d373cade4e832627b4f6 (test),-4348) OR 9234=7819 AND (1780=1780,test
+91,test,098f6bcd4621d373cade4e832627b4f6 (test),-7810) OR 8911=8911 AND (5709=5709,test
+92,test,098f6bcd4621d373cade4e832627b4f6 (test),-1072)) OR 5894=6315 AND ((8038=8038,test
+93,test,098f6bcd4621d373cade4e832627b4f6 (test),-8532)) OR 8911=8911 AND ((3123=3123,test
+94,test,098f6bcd4621d373cade4e832627b4f6 (test),-8827 OR 9189=9703,test
+95,test,098f6bcd4621d373cade4e832627b4f6 (test),-8902 OR 8911=8911,test
+96,test,098f6bcd4621d373cade4e832627b4f6 (test),-1261 OR 4684=8874-- VGfi,test
+97,test,098f6bcd4621d373cade4e832627b4f6 (test),-2950 OR 8911=8911-- OafV,test
+98,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AND 5889=(SELECT (CASE WHEN (5889=4477) THEN 5889 ELSE (SELECT 4477 UNION SELECT 6404) END))-- -",test
+99,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AND 5958=(SELECT (CASE WHEN (5958=5958) THEN 5958 ELSE (SELECT 7159 UNION SELECT 8561) END))-- -",test
+100,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" AND 1815=(SELECT (CASE WHEN (1815=1639) THEN 1815 ELSE (SELECT 1639 UNION SELECT 5540) END))-- -",test
+101,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" AND 5958=(SELECT (CASE WHEN (5958=5958) THEN 5958 ELSE (SELECT 7159 UNION SELECT 8561) END))-- -",test
+102,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AND 6223=(SELECT (CASE WHEN (6223=7045) THEN 6223 ELSE (SELECT 7045 UNION SELECT 2187) END))-- -,test
+103,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AND 5958=(SELECT (CASE WHEN (5958=5958) THEN 5958 ELSE (SELECT 7159 UNION SELECT 8561) END))-- -,test
+104,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AND 4709=(SELECT (CASE WHEN (4709=8365) THEN 4709 ELSE (SELECT 8365 UNION SELECT 8901) END))-- -,test
+105,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AND 5958=(SELECT (CASE WHEN (5958=5958) THEN 5958 ELSE (SELECT 7159 UNION SELECT 8561) END))-- -,test
+106,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 2368=(SELECT (CASE WHEN (2368=2780) THEN 2368 ELSE (SELECT 2780 UNION SELECT 5164) END))-- -,test
+107,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 5958=(SELECT (CASE WHEN (5958=5958) THEN 5958 ELSE (SELECT 7159 UNION SELECT 8561) END))-- -,test
+108,test,098f6bcd4621d373cade4e832627b4f6 (test),"-8283"") OR 7692=(SELECT (CASE WHEN (7692=9537) THEN 7692 ELSE (SELECT 9537 UNION SELECT 1333) END))-- -",test
+109,test,098f6bcd4621d373cade4e832627b4f6 (test),"-2241"") OR 1226=(SELECT (CASE WHEN (1226=1226) THEN 1226 ELSE (SELECT 1677 UNION SELECT 2990) END))-- -",test
+110,test,098f6bcd4621d373cade4e832627b4f6 (test),"-2895"" OR 1067=(SELECT (CASE WHEN (1067=8620) THEN 1067 ELSE (SELECT 8620 UNION SELECT 5109) END))-- -",test
+111,test,098f6bcd4621d373cade4e832627b4f6 (test),"-5420"" OR 1226=(SELECT (CASE WHEN (1226=1226) THEN 1226 ELSE (SELECT 1677 UNION SELECT 2990) END))-- -",test
+112,test,098f6bcd4621d373cade4e832627b4f6 (test),-6612) OR 5988=(SELECT (CASE WHEN (5988=2671) THEN 5988 ELSE (SELECT 2671 UNION SELECT 1463) END))-- -,test
+113,test,098f6bcd4621d373cade4e832627b4f6 (test),-9194) OR 1226=(SELECT (CASE WHEN (1226=1226) THEN 1226 ELSE (SELECT 1677 UNION SELECT 2990) END))-- -,test
+114,test,098f6bcd4621d373cade4e832627b4f6 (test),-2369)) OR 3591=(SELECT (CASE WHEN (3591=9451) THEN 3591 ELSE (SELECT 9451 UNION SELECT 7182) END))-- -,test
+115,test,098f6bcd4621d373cade4e832627b4f6 (test),-6194)) OR 1226=(SELECT (CASE WHEN (1226=1226) THEN 1226 ELSE (SELECT 1677 UNION SELECT 2990) END))-- -,test
+116,test,098f6bcd4621d373cade4e832627b4f6 (test),-6341 OR 6806=(SELECT (CASE WHEN (6806=6630) THEN 6806 ELSE (SELECT 6630 UNION SELECT 8525) END))-- -,test
+117,test,098f6bcd4621d373cade4e832627b4f6 (test),-2746 OR 1226=(SELECT (CASE WHEN (1226=1226) THEN 1226 ELSE (SELECT 1677 UNION SELECT 2990) END))-- -,test
+118,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AND 3121=7518-- -",test
+119,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AND 2384=2384-- -",test
+120,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" AND 6092=6432-- -",test
+121,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" AND 2384=2384-- -",test
+122,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AND 3717=8316-- -,test
+123,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AND 2384=2384-- -,test
+124,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AND 6677=9030-- -,test
+125,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AND 2384=2384-- -,test
+126,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 4817=7931-- -,test
+127,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 2384=2384-- -,test
+128,test,098f6bcd4621d373cade4e832627b4f6 (test),"-7859"") OR 6163=4071-- -",test
+129,test,098f6bcd4621d373cade4e832627b4f6 (test),"-6783"") OR 3781=3781-- -",test
+130,test,098f6bcd4621d373cade4e832627b4f6 (test),"-8132"" OR 4507=2685-- -",test
+131,test,098f6bcd4621d373cade4e832627b4f6 (test),"-5334"" OR 3781=3781-- -",test
+132,test,098f6bcd4621d373cade4e832627b4f6 (test),-3196) OR 2599=3687-- -,test
+133,test,098f6bcd4621d373cade4e832627b4f6 (test),-3539) OR 3781=3781-- -,test
+134,test,098f6bcd4621d373cade4e832627b4f6 (test),-3631)) OR 7504=1589-- -,test
+135,test,098f6bcd4621d373cade4e832627b4f6 (test),-1902)) OR 3781=3781-- -,test
+136,test,098f6bcd4621d373cade4e832627b4f6 (test),-5517 OR 4913=3068-- -,test
+137,test,098f6bcd4621d373cade4e832627b4f6 (test),-4011 OR 3781=3781-- -,test
+138,test,098f6bcd4621d373cade4e832627b4f6 (test),(SELECT (CASE WHEN (1533=8904) THEN 0x74657374 ELSE (SELECT 8904 UNION SELECT 5054) END)),test
+139,test,098f6bcd4621d373cade4e832627b4f6 (test),(SELECT (CASE WHEN (9415=9415) THEN 0x74657374 ELSE (SELECT 9004 UNION SELECT 2071) END)),test
+140,test,098f6bcd4621d373cade4e832627b4f6 (test),(CASE WHEN (6291=9307) THEN 6291 ELSE 6291*(SELECT 6291 FROM DUAL UNION SELECT 9307 FROM DUAL) END),test
+141,test,098f6bcd4621d373cade4e832627b4f6 (test),(CASE WHEN (9617=9617) THEN 9617 ELSE 9617*(SELECT 9617 FROM DUAL UNION SELECT 3591 FROM DUAL) END),test
+142,test,098f6bcd4621d373cade4e832627b4f6 (test),(CASE WHEN 8392=7781 THEN 8392 ELSE NULL END),test
+143,test,098f6bcd4621d373cade4e832627b4f6 (test),(CASE WHEN 9464=9464 THEN 9464 ELSE NULL END),test
+144,test,098f6bcd4621d373cade4e832627b4f6 (test),"(SELECT CONCAT(CONCAT(0x71716b7671,(CASE WHEN (4448=4448) THEN 0x31 ELSE 0x30 END)),0x716b6a6271))",test
+145,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" AND 5821=6254#",test
+146,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" AND 9484=9484#",test
+147,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AND 9260=4077#",test
+148,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AND 9484=9484#",test
+149,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"")) AND 9027=9890#",test
+150,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"")) AND 9484=9484#",test
+151,test,098f6bcd4621d373cade4e832627b4f6 (test),"test""))) AND 9346=5634#",test
+152,test,098f6bcd4621d373cade4e832627b4f6 (test),"test""))) AND 9484=9484#",test
+153,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"")) AS EPDT WHERE 6394=6394 AND 6912=2873#",test
+154,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"")) AS vAol WHERE 4060=4060 AND 9484=9484#",test
+155,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AS UbNp WHERE 3366=3366 AND 3714=7358#",test
+156,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AS sOyx WHERE 8075=8075 AND 9484=9484#",test
+157,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AND 1270=9473#,test
+158,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AND 9484=9484#,test
+159,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AND 4447=5368#,test
+160,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AND 9484=9484#,test
+161,test,098f6bcd4621d373cade4e832627b4f6 (test),test))) AND 1469=7878#,test
+162,test,098f6bcd4621d373cade4e832627b4f6 (test),test))) AND 9484=9484#,test
+163,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 5489=7256#,test
+164,test,098f6bcd4621d373cade4e832627b4f6 (test),test AND 9484=9484#,test
+165,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AS slUi WHERE 3112=3112 AND 2030=7084#,test
+166,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AS dUEh WHERE 9052=9052 AND 9484=9484#,test
+167,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AS TbPy WHERE 7022=7022 AND 4148=8474#,test
+168,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AS feqd WHERE 8458=8458 AND 9484=9484#,test
+169,test,098f6bcd4621d373cade4e832627b4f6 (test),test` WHERE 3086=3086 AND 2919=9519#,test
+170,test,098f6bcd4621d373cade4e832627b4f6 (test),test` WHERE 6493=6493 AND 9484=9484#,test
+171,test,098f6bcd4621d373cade4e832627b4f6 (test),test`) WHERE 5227=5227 AND 2080=2658#,test
+172,test,098f6bcd4621d373cade4e832627b4f6 (test),test`) WHERE 9586=9586 AND 9484=9484#,test
+173,test,098f6bcd4621d373cade4e832627b4f6 (test),"-2873"" OR 8869=6894#",test
+174,test,098f6bcd4621d373cade4e832627b4f6 (test),"-9119"" OR 5728=5728#",test
+175,test,098f6bcd4621d373cade4e832627b4f6 (test),"-1383"") OR 5684=9014#",test
+176,test,098f6bcd4621d373cade4e832627b4f6 (test),"-9206"") OR 5728=5728#",test
+177,test,098f6bcd4621d373cade4e832627b4f6 (test),"-6375"")) OR 5173=9503#",test
+178,test,098f6bcd4621d373cade4e832627b4f6 (test),"-8435"")) OR 5728=5728#",test
+179,test,098f6bcd4621d373cade4e832627b4f6 (test),"-5380""))) OR 9587=9364#",test
+180,test,098f6bcd4621d373cade4e832627b4f6 (test),"-4673""))) OR 5728=5728#",test
+181,test,098f6bcd4621d373cade4e832627b4f6 (test),"-2787"")) AS Lpxh WHERE 8809=8809 OR 2174=2440#",test
+182,test,098f6bcd4621d373cade4e832627b4f6 (test),"-2395"")) AS XZJW WHERE 1808=1808 OR 5728=5728#",test
+183,test,098f6bcd4621d373cade4e832627b4f6 (test),"-2769"") AS qwfh WHERE 2839=2839 OR 5059=2881#",test
+184,test,098f6bcd4621d373cade4e832627b4f6 (test),"-8821"") AS fqgg WHERE 3674=3674 OR 5728=5728#",test
+185,test,098f6bcd4621d373cade4e832627b4f6 (test),-6676) OR 7751=7647#,test
+186,test,098f6bcd4621d373cade4e832627b4f6 (test),-6588) OR 5728=5728#,test
+187,test,098f6bcd4621d373cade4e832627b4f6 (test),-5538)) OR 2341=1628#,test
+188,test,098f6bcd4621d373cade4e832627b4f6 (test),-3765)) OR 5728=5728#,test
+189,test,098f6bcd4621d373cade4e832627b4f6 (test),-4995))) OR 4781=5084#,test
+190,test,098f6bcd4621d373cade4e832627b4f6 (test),-4563))) OR 5728=5728#,test
+191,test,098f6bcd4621d373cade4e832627b4f6 (test),-7434 OR 6191=3170#,test
+192,test,098f6bcd4621d373cade4e832627b4f6 (test),-5771 OR 5728=5728#,test
+193,test,098f6bcd4621d373cade4e832627b4f6 (test),-9519)) AS VeOz WHERE 9421=9421 OR 5752=1927#,test
+194,test,098f6bcd4621d373cade4e832627b4f6 (test),-1255)) AS RzBP WHERE 5690=5690 OR 5728=5728#,test
+195,test,098f6bcd4621d373cade4e832627b4f6 (test),-2458) AS nqys WHERE 7161=7161 OR 5987=6481#,test
+196,test,098f6bcd4621d373cade4e832627b4f6 (test),-4217) AS OBHF WHERE 8317=8317 OR 5728=5728#,test
+197,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" OR NOT 5831=5509#",test
+198,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" OR NOT 5179=5179#",test
+199,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") OR NOT 5863=8922#",test
+200,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") OR NOT 5179=5179#",test
+201,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"")) OR NOT 5588=1368#",test
+202,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"")) OR NOT 5179=5179#",test
+203,test,098f6bcd4621d373cade4e832627b4f6 (test),"test""))) OR NOT 5349=2333#",test
+204,test,098f6bcd4621d373cade4e832627b4f6 (test),"test""))) OR NOT 5179=5179#",test
+205,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"")) AS OtnI WHERE 9179=9179 OR NOT 7448=3893#",test
+206,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"")) AS OIEE WHERE 5970=5970 OR NOT 5179=5179#",test
+207,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AS jeGW WHERE 6463=6463 OR NOT 2972=9847#",test
+208,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"") AS oWSN WHERE 4572=4572 OR NOT 5179=5179#",test
+209,test,098f6bcd4621d373cade4e832627b4f6 (test),test) OR NOT 4427=4881#,test
+210,test,098f6bcd4621d373cade4e832627b4f6 (test),test) OR NOT 5179=5179#,test
+211,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) OR NOT 2064=2867#,test
+212,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) OR NOT 5179=5179#,test
+213,test,098f6bcd4621d373cade4e832627b4f6 (test),test))) OR NOT 3054=7231#,test
+214,test,098f6bcd4621d373cade4e832627b4f6 (test),test))) OR NOT 5179=5179#,test
+215,test,098f6bcd4621d373cade4e832627b4f6 (test),test OR NOT 4330=6283#,test
+216,test,098f6bcd4621d373cade4e832627b4f6 (test),test OR NOT 5179=5179#,test
+217,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AS oISI WHERE 7331=7331 OR NOT 2122=3212#,test
+218,test,098f6bcd4621d373cade4e832627b4f6 (test),test)) AS fpqC WHERE 4025=4025 OR NOT 5179=5179#,test
+219,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AS apHF WHERE 4568=4568 OR NOT 1706=4812#,test
+220,test,098f6bcd4621d373cade4e832627b4f6 (test),test) AS JuxR WHERE 7288=7288 OR NOT 5179=5179#,test
+221,test,098f6bcd4621d373cade4e832627b4f6 (test),test` WHERE 8561=8561 OR NOT 1051=1435#,test
+222,test,098f6bcd4621d373cade4e832627b4f6 (test),test` WHERE 2596=2596 OR NOT 5179=5179#,test
+223,test,098f6bcd4621d373cade4e832627b4f6 (test),test`) WHERE 1046=1046 OR NOT 2751=7166#,test
+224,test,098f6bcd4621d373cade4e832627b4f6 (test),test`) WHERE 9888=9888 OR NOT 5179=5179#,test
+225,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" RLIKE (SELECT (CASE WHEN (8776=6732) THEN 0x74657374 ELSE 0x28 END))-- TEfB",test
+226,test,098f6bcd4621d373cade4e832627b4f6 (test),"test"" RLIKE (SELECT (CASE WHEN (7373=7373) THEN 0x74657374 ELSE 0x28 END))-- dZSf",test
+227,test,098f6bcd4621d373cade4e832627b4f6 (test),1,test
+228,test,098f6bcd4621d373cade4e832627b4f6 (test),"(SELECT CONCAT(0x71716b7671,(ELT(9066=9066,1)),0x716b6a6271))",test
+229,test,098f6bcd4621d373cade4e832627b4f6 (test),test,test
+230,test,098f6bcd4621d373cade4e832627b4f6 (test),test,test
+231,test,098f6bcd4621d373cade4e832627b4f6 (test),test,test
+

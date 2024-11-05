@@ -1,0 +1,2 @@
+pid,thd_id,conn_id,db,state,time,user,command,source,progress,full_scan,last_wait,rows_sent,trx_state,tmp_tables,trx_latency,lock_latency,program_name,rows_affected,rows_examined,current_memory,last_statement,trx_autocommit,tmp_disk_tables,current_statement,last_wait_latency,statement_latency,last_statement_latency
+
