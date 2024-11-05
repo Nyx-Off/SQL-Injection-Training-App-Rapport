@@ -166,16 +166,6 @@ le mot de passe est encoder en **MD5** (21232f297a57a5a743894a0e4a801fc3), il no
 
 ---
 
-## 📁 Fichiers Générés
-
-- **Schéma de la base de données** : [`database_schema.csv`](./database_schema.csv)
-- **Liste des utilisateurs de l'application** : [`application_users.csv`](./application_users.csv)
-- **Liste des utilisateurs de MariaDB** : [`mariadb_users.csv`](./mariadb_users.csv)
-- **Mot de passe root de MariaDB** : [`mariadb_root_password.txt`](./mariadb_root_password.txt)
-- **Mot de passe administrateur de l'application** : [`application_admin_password.txt`](./application_admin_password.txt)
-
----
-
 ## 📊 Résumé des Résultats
 
 | Objectif                                                       | Statut    |
