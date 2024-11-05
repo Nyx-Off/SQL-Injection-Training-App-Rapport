@@ -17,8 +17,7 @@ Ce projet a pour but de démontrer l'exploitation de vulnérabilités d'injectio
 2. **Lister les utilisateurs de l'application** et les sauvegarder dans un fichier `.csv`.
 3. **Lister les utilisateurs de MariaDB** et les sauvegarder dans un fichier `.csv`.
 4. **Obtenir et documenter le mot de passe de l'utilisateur root de MariaDB** par force brute.
-5. **Challenge 2 : Obtenir et documenter le mot de passe de l'administrateur de l'application**.
-
+   
 ---
 
 ## 🛠️ Pré-requis
